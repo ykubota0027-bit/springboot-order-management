@@ -1,0 +1,18 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "yuma",
+    "email": "yuma@example.com"
+}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+    "productName": "test-01-post",
+    "price": 100,
+    "stock": 3
+}

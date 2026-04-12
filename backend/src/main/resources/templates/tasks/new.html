@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新規タスク</title>
+    <link rel="stylesheet" href="css/tasks.css">
+</head>
+
+<body>
+    <h1>新規タスク作成</h1>
+    <form action="/tasks" method="post">
+        <div>
+            <label>タイトル：</label>
+            <input type="text" name="title">
+        </div>
+        <div>
+            <label>期限：</label>
+            <input type="date" name="dueDate">
+        </div>
+        <button type="submit">登録</button>
+    </form>
+    <p><a href="/tasks">一覧へ戻る</a></p>
+</body>
+
+</html>

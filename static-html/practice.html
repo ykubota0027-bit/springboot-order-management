@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="introduction">
+        <h1>自己紹介</h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="left-text">
+                <h2>窪田侑真</h2>
+                <img src="img/displayTest.jpeg" alt="プロフィール写真">
+                <p>はじめまして！講師の窪田です<br>
+                    3ヶ月間よろしくお願いいたします</p>
+            </div>
+            <table>
+                <tr>
+                    <th>生年月日</th>
+                    <td>1995/11/27</td>
+                </tr>
+                <tr>
+                    <th>出身地</th>
+                    <td>兵庫県</td>
+                </tr>
+                <tr>
+                    <th>得意言語</th>
+                    <td>Java</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <div class="message1">
+                <p>一言メッセージをお願いします！</p>
+            </div>
+            <div class="form-box">
+                <label>お名前：</label>
+                <input type="text" name="name"><br>
+                <label>性別：</label>
+                <input type="radio" name="gender" value="male" checked>男
+                <input type="radio" name="gender" value="female">女<br>
+                <label>メッセージ：</label>
+                <textarea rows="4" cols="30"></textarea><br>
+                <div class="botton">
+                    <button onclick="submit()">送信</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

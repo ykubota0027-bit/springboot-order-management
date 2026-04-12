@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="introduction">
+        <h1>自己紹介</h1>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="left-text">
+                <h2>窪田侑真</h2>
+                <img src="img/displayTest.jpeg" alt="プロフィール写真">
+                <p>はじめまして！講師の窪田です<br>
+                    3ヶ月間よろしくお願いします!</p>
+                <table>
+                    <tr>
+                        <th>生年月日</th>
+                        <td>1995/11/27</td>
+                    </tr>
+                    <tr>
+                        <th>得意分野</th>
+                        <td>バックエンド/Java/SQL</td>
+                    </tr>
+                    <tr>
+                        <th>趣味</th>
+                        <td>散歩/読書/語学学習(韓国語)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="message1">
+                <p>一言メッセージをお願いします！</p>
+            </div>
+            <div class="form-box">
+                <div class="form-row">
+                    <label>お名前：</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="form-row">
+                    <label>性別：</label>
+                    <input type="radio" name="gender" value="male">男
+                    <input type="radio" name="gender" value="female">女
+                </div>
+                <div class="form-row">
+                    <label>メッセージ：</label>
+                    <textarea rows="4" cols="30"></textarea>
+                </div>
+                <br>
+                <div class="botton">
+                    <button onclick="handleSubmit()">送信</button>
+                </div>
+            </div>
+            <div id="error-message" style="color: red;"></div>
+            <div id="resultArea" style="margin-top: 20px;"></div>
+        </div>
+    </div>
+    <script src="js/practiceHandle.js"></script>
+</body>
+
+<footer>
+    <p>COPYRIGHT ©️ 2026 Kubota Yuma - ALL RIGHT RESERVED</p>
+</footer>
+
+</html>
