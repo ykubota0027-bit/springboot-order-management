@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dto.UserCreateRequest;
-import com.example.demo.dto.UserResponse;
+import com.example.demo.dto.request.UserCreateRequest;
+import com.example.demo.dto.response.UserResponse;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 
