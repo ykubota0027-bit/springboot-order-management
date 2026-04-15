@@ -7,22 +7,26 @@
 
 <body>
     <h1>書籍登録画面</h1>
-    <div>
-        <label>タイトル；</label>
-        <input type="text" name="title">
-    </div>
-    <div>
-        <label>タイトル；</label>
-        <input type="text" name="author">
-    </div>
-    <div>
-        <label>タイトル；</label>
-        <input type="text" name="price">
-    </div>
-    <div>
-        <label>タイトル；</label>
-        <input type="date" name="publishedDate">
-    </div>
+    <form action="/books/bookform" method="post">
+        <div>
+            <label>タイトル:</label>
+            <input type="text" name="title">
+        </div>
+        <div>
+            <label>著者名：</label>
+            <input type="text" name="author">
+        </div>
+        <div>
+            <label>価格：</label>
+            <input type="text" name="price">
+        </div>
+        <div>
+            <label>出版日：</label>
+            <input type="date" name="publishedDate">
+        </div>
+        <button type="submit">登録</button>
+        <p><a href="/book/list">一覧に戻る</a></p>
+    </form>
 </body>
 
 </html>

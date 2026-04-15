@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.demo.dto.response;
 
 public class UserResponse {
     private Long id;
@@ -10,13 +10,16 @@ public class UserResponse {
         this.name = name;
         this.email = email;
     }
-    public Long getId(){
+
+    public Long getId() {
         return id;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getEmail(){
+
+    public String getEmail() {
         return email;
     }
 }
