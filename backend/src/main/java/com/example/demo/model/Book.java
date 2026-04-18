@@ -25,6 +25,9 @@ public class Book {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    public Book() {
+    }
+
     public Book(Long id, String title, String author, BigDecimal price, LocalDate publishedDate,
             LocalDateTime createdAt) {
         this.id = id;

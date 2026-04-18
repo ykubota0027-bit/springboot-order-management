@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.demo.dto.OrderResponse;
+import com.example.demo.dto.response.OrderResponse;
 import com.example.demo.model.Order;
 import com.example.demo.repository.OrderRepository;
 

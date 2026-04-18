@@ -1,8 +1,8 @@
 package com.example.demo.Controller;
 
 import com.example.demo.controller.OrderController;
-import com.example.demo.dto.OrderCreateRequest;
-import com.example.demo.dto.OrderResponse;
+import com.example.demo.dto.request.OrderCreateRequest;
+import com.example.demo.dto.response.OrderResponse;
 import com.example.demo.exception.GlobalExceptionHandler;
 import com.example.demo.model.Order;
 import com.example.demo.service.OrderQueryService;
@@ -21,7 +21,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;

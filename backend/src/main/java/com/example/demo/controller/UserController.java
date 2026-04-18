@@ -3,8 +3,8 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.dto.UserCreateRequest;
-import com.example.demo.dto.UserResponse;
+import com.example.demo.dto.request.UserCreateRequest;
+import com.example.demo.dto.response.UserResponse;
 import com.example.demo.service.UserService;
 
 import jakarta.validation.Valid;
