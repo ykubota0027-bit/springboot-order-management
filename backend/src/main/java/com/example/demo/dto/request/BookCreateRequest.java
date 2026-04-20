@@ -17,10 +17,22 @@ public class BookCreateRequest {
     @NotNull(message = "publishedDate is required")
     private LocalDate publishedDate;
 
-    public BookCreateRequest(String title, String author, BigDecimal price, LocalDate publishedDate) {
+    public BookCreateRequest() {
+    }
+
+    public void setTitle(String title) {
         this.title = title;
+    }
+
+    public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public void setPublishedDate(LocalDate publishedDate) {
         this.publishedDate = publishedDate;
     }
 

@@ -5,9 +5,12 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.example.demo.model.Book;
 import com.example.demo.repository.BookRepository;
 
+@Service
 public class BookService {
     private final BookRepository repository;
 
@@ -25,7 +28,7 @@ public class BookService {
         repository.save(book);
     }
 
-    public List<Book> selectAll() {
+    public List<Book> findAll() {
         return repository.findAll();
     }
 

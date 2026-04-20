@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>書籍一覧画面</title>
+</head>
+<h1>書籍一覧</h1>
+<table>
+    <tr>
+        <th>タイトル</th>
+        <th>著者</th>
+        <th>価格</th>
+        <th>出版日</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.author}"></td>
+        <td th:text="${#numbers.formatDecimal(book.price,0,'COMMA',0,'POINT')}"></td>
+        <td th:text="${book.publishedDate}"></td>
+    </tr>
+</table>
+<p><a th:href="@{/books/bookForm}">登録画面へ</a></p>
+
+</html>
