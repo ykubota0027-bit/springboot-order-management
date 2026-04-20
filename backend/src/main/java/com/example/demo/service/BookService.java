@@ -7,6 +7,7 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.dto.response.BookResponse;
 import com.example.demo.model.Book;
 import com.example.demo.repository.BookRepository;
 
@@ -28,8 +29,12 @@ public class BookService {
         repository.save(book);
     }
 
-    public List<Book> findAll() {
-        return repository.findAll();
+    public List<BookResponse> findAll() {
+        List<Book> books = repository.findAll();
+
+        return books.stream()
+                .map(BookResponse::from)
+                .toList();
     }
 
     public Optional<Book> findById(Long id) {

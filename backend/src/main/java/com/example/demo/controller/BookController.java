@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.demo.dto.request.BookCreateRequest;
 import com.example.demo.dto.response.BookResponse;
-import com.example.demo.model.Book;
 import com.example.demo.service.BookService;
 
 import jakarta.validation.Valid;
